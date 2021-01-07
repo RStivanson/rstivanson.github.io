@@ -1,0 +1,47 @@
+.profile-image {
+    max-width: 180px;
+}
+
+.site-nav {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.site-nav .navbar {
+    position: static!important;
+    border: none;
+    background-color: none;
+    margin-bottom: 0;
+}
+
+.site-nav .navbar .nav a:hover {
+    background-color: #bbbbbb!important;
+}
+
+.site-nav .navbar .container-fluid,
+.site-nav .navbar .navbar-collapse.collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-nav .navbar-default {
+    background-color: transparent;
+}
+
+.featured .project-image {
+    border: 2px solid #333;
+    max-height: 375px;
+    margin: auto;
+}
+
+.project .project-image {
+    border: thin solid #333;
+    max-height: 225px;
+    margin: auto;
+}
+
+.view-more p {
+    display: inline-block;
+    margin: 0 5px;
+}

@@ -1,0 +1,379 @@
+---
+permalink: /index.html
+layout: default
+title: Robert Stivanson - Resume
+---
+
+{% assign profile = site.data.profile %}
+{% assign icons = site.data.fa_icons %}
+
+<div class="row">
+    <div class="primary col-md-8 col-sm-12 col-xs-12">
+        {% if profile.config.resume.showAboutMe and profile.aboutMe.size > 0 %}
+            <section class="about section">
+                <div class="section-inner">
+                    <h2 class="heading">{{ profile.name }}</h2>
+                    <div class="content">
+                        {% for item in profile.aboutMe %}
+                            <p>{{ item }}</p>
+                        {% endfor %}
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+        {% endif %}
+
+        {% assign allProjects = site.data.projects | where:"active",true | sort:"dates.start" %}
+        {% assign featuredProject = allProjects | where:"isFeatured",true | first %}
+        {% assign priorityProjects = allProjects | where:"isPriority",true %}
+        {% assign otherProjects = allProjects | where:"isFeatured",false | where:"isPriority",false %}
+
+        <section class="latest section">
+            <div class="section-inner">
+                <h2 class="heading">Latest Projects</h2>
+                <div class="content">
+                    {% if featuredProject %}
+                        <div class="item featured text-center">
+                            <h3 class="title">
+                                <a href="{{ featuredProject.defaultLink }}">{{ featuredProject.name }}</a>
+                            </h3>
+                            <p class="summary">{{ featuredProject.oneLiner }}</p>
+                            <div class="featured-image">
+                                <a href="{{ featuredProject.defaultLink }}" title="{{ featuredProject.name }}">
+                                    {% if item.imageLink != "" %}
+                                        <img class="img-responsive project-image" src="{{ featuredProject.imageLink }}" alt="{{ featuredProject.name }}" />
+                                    {% endif %}
+                                </a>
+                                {% if featuredProject.ribbon %}
+                                    <!--
+                                        "text": "New"
+                                    -->
+                                    <div class="ribbon hidden">
+                                        <div class="text">{{ featuredProject.ribbon.text}}</div>
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="desc text-left">
+                                {% for descLine in featuredProject.description %}
+                                    <p>{{ descLine }}</p>
+                                {% endfor %}
+                            </div><!--//desc-->
+                            {% if featuredProject.viewMore and featuredProject.viewMore.size > 0 %}
+                                <div class="view-more">
+                                {% for more in featuredProject.viewMore %}
+                                    <p>
+                                        <a class="more-link" href="{{ more.link }}">
+                                            {% assign icon = icons | where:"id",more.faIcon | first %}
+                                            <i class="{{ icon.icon_class }}"></i> {{ more.text }}
+                                        </a>
+                                    </p>
+                                {% endfor %}
+                                </div>
+                            {% endif %}
+                            {% if featuredProject.projectBacking %}
+                                <!--
+                                    "text": "Back My Project"
+                                    "faIcon": "thumbs-up"
+                                    "link": "#"
+                                -->
+                                <a class="btn btn-cta-secondary" href="{{ featuredProject.projectBacking.link }}">
+                                    {% assign icon = icons | where:"id",featuredProject.projectBacking.faIcon | first %}
+                                    <i class="{{ icon.icon_class }}"></i> {{ featuredProject.projectBacking.text }}
+                                </a>
+                            {% endif %}
+                        </div><!--//item-->
+                    {% endif %}
+
+                    {% if priorityProjects and priorityProjects.size > 0 %}
+                        {% if featuredProject %}
+                            <hr class="divider" />
+                        {% endif %}
+
+                        {% for item in priorityProjects limit:profile.config.resume.maxPriorityProjects %}
+                            <div class="project item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="{{ item.defaultLink }}">
+                                    {% if item.imageLink and item.imageLink != "" %}
+                                        <img class="img-responsive project-image" src="{{ item.imageLink }}" alt="{{ item.name }}" />
+                                    {% endif %}
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title">
+                                        <a href="{{ item.defaultLink }}">{{ item.name }}</a>
+                                    </h3>
+                                    {% for descLine in item.description %}
+                                        <p class="summary">{{ descLine }}</p>
+                                    {% endfor %}
+                                    {% if item.viewMore and item.viewMore.size > 0 %}
+                                        <div class="view-more text-right">
+                                        {% for more in item.viewMore %}
+                                            <p>
+                                                <a class="more-link" href="{{ more.link }}">
+                                                    {% assign icon = icons | where:"id",more.faIcon | first %}
+                                                    <i class="{{ icon.icon_class }}"></i> {{ more.text }}
+                                                </a>
+                                            </p>
+                                        {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div><!--//desc-->
+                            </div><!--//item-->
+                            
+                            {% if forloop.last == false %}
+                                <hr class="divider" />
+                            {% endif %}
+                        {% endfor %}
+                    {% else if featuredProject == nil %}
+                        <p>No featured projects.</p>
+                    {% endif %}
+
+                    {% if allProjects.size > profile.config.resume.maxPriorityProjects %}
+                        <div class="text-center">
+                            <a class="btn btn-cta-secondary" href="/projects.html">
+                                <i class="fa fa-bars"></i> View All Projects
+                            </a>
+                        </div>
+                    {% endif %}
+                </div><!--//content-->
+            </div><!--//section-inner-->
+        </section><!--//section-->
+
+        {% if profile.config.resume.showOtherProjects %}
+            <section class="projects section">
+                <div class="section-inner">
+                    <h2 class="heading">Other Projects</h2>
+                    <div class="content">
+                        {% if otherProjects and otherProjects.size > 0 %}
+                            {% for item in otherProjects limit:profile.config.resume.maxOtherProjects  %}
+                                <div class="item">
+                                    <h3 class="title">
+                                        <a href="{{ item.defaultLink }}">{{ item.name }}</a>
+                                    </h3>
+                                    {% for descLine in item.description %}
+                                        <p class="summary">{{ descLine }}</p>
+                                    {% endfor %}
+                                    {% if item.viewMore and item.viewMore.size > 0 %}
+                                        <div class="view-more text-right">
+                                        {% for more in item.viewMore %}
+                                            <p>
+                                                <a class="more-link" href="{{ more.link }}">
+                                                    {% assign icon = icons | where:"id",more.faIcon | first %}
+                                                    <i class="{{ icon.icon_class }}"></i> {{ more.text }}
+                                                </a>
+                                            </p>
+                                        {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div><!--//item-->
+                            {% endfor %}
+                        {% else%}
+                            <p>No other projects.</p>
+                        {% endif %}
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+        {% endif %}
+
+        <section class="experience section">
+            <div class="section-inner">
+                <h2 class="heading">Work Experience</h2>
+                <div class="content">
+                    {% assign jobs = site.data.jobs | where:"active",true | sort:"dates.start" | reverse  %}
+                    {% if jobs and jobs.size > 0 %}
+                        {% for item in jobs limit:profile.config.resume.maxJobs %}
+                            <div class="item">
+                                <h3 class="title">{{ item.positionTitle }} -
+                                    <span class="place">
+                                        <a href="{{ item.companyLink }}">{{ item.companyName }}</a>
+                                    </span>
+                                    <span class="year">
+                                        {% if item.dates %}
+                                            {% if item.dates.start %}
+                                                {% assign startDate = item.dates.start | date: profile.config.general.projectsDateFormat %}
+                                                {% if item.dates.isPresent %}
+                                                    ({{ startDate }} - Present)
+                                                {% elsif item.dates.end and item.dates.end != "" %}
+                                                    {% assign endDate = item.dates.end | date: profile.config.general.projectsDateFormat %}
+                                                    {% if startDate != endDate %}
+                                                        ({{ startDate }} - {{ endDate }})
+                                                    {% else %}
+                                                        ({{ startDate }})
+                                                    {% endif %}
+                                                {% else %}
+                                                    ({{ startDate }})
+                                                {% endif %}
+                                            {% elsif item.dates.end %}
+                                                ({{ item.dates.end | date:profile.config.general.projectsDateFormat }})
+                                            {% endif %}
+                                        {% endif %}
+                                    </span>
+                                </h3>
+                                <ul>
+                                    {% for task in item.tasks %}
+                                        <li>{{ task }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div><!--//item-->
+                        {% endfor %}
+                    {% else %}
+                        No work experience.
+                    {% endif %}
+                </div><!--//content-->
+            </div><!--//section-inner-->
+        </section><!--//section-->
+    </div><!--//primary-->
+    <div class="secondary col-md-4 col-sm-12 col-xs-12">
+        <aside class="info aside section">
+            <div class="section-inner">
+                <h2 class="heading sr-only">Basic Information</h2>
+                <div class="content">
+                    <ul class="list-unstyled">
+                        <li>
+                            {% assign mapMarkerIcon = icons | where:"id","map-marker" | first %}
+                            <i class="{{ mapMarkerIcon.icon_class }}"></i>
+                            <span class="sr-only">Location:</span>
+                            {% if profile.config.resume.showCity %}
+                                {{ profile.location.city }},
+                            {% endif %}
+                            {% if profile.config.resume.showLongState %}
+                                {{ profile.location.state }}
+                            {% else %}
+                                {{ profile.location.stateCode }}
+                            {% endif %}
+                            {% if profile.config.resume.showCountryCode %}
+                                {{ profile.location.countryCode }}
+                            {% endif %}
+                        </li>
+                        {% assign envelopeIcon = icons | where:"id","envelope" | first %}
+                        <li><i class="{{ envelopeIcon.icon_class }}"></i><span class="sr-only">Email:</span><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></li>
+                        {% assign linkIcon = icons | where:"id","download" | first %}
+                        <!--<li><i class="{{ linkIcon.icon_class }}"></i><a href="{{ profile.resumeLink }}">View Resume</a></li>-->
+                    </ul>
+                </div><!--//content-->
+            </div><!--//section-inner-->
+        </aside><!--//aside-->
+
+        <aside class="skills aside section">
+            <div class="section-inner">
+                <h2 class="heading">Skills</h2>
+                <div class="content">
+                    <div class="skillset">
+                        {% assign skills = site.data.skills | where:"active",true | sort:"value" | reverse %}
+                        {% if skills and skills.size > 0 %}
+                            {% for item in skills limit:profile.config.resume.maxSkills %}
+                                <div class="item">
+                                    <h3 class="level-title">{{ item.name }}<span class="level-label">{{ item.valueDescription }}</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="{{  item.value }}%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+                            {% endfor %}
+                        {% else %}
+                            No skills.
+                        {% endif %}
+                    </div>
+                </div><!--//content-->
+            </div><!--//section-inner-->
+        </aside><!--//section-->
+
+        <aside class="education aside section">
+            <div class="section-inner">
+                <h2 class="heading">Publications</h2>
+                <div class="content">
+                    <div class="item">
+                        {% assign publications = site.data.publications | where:"active",true | sort:"publicationYear" | reverse %}
+                        {% if publications and publications.size > 0 %}
+                            {% for item in publications %}
+                                <a href="{{ item.link }}">
+                                    {% assign icon = icons | where:"id",item.faIcon | first %}
+                                    <h3 class="title"><i class="{{ icon.icon_class }}"></i> {{ item.name }}</h3>
+                                </a>
+                                <h4 class="university">{{ item.description }}</h4>
+                            {% endfor %}
+                        {% else %}
+                            No publications.
+                        {% endif %}
+                    </div><!--//item-->
+                </div><!--//content-->
+            </div><!--//section-inner-->
+        </aside><!--//section-->
+
+        <aside class="education aside section">
+            <div class="section-inner">
+                <h2 class="heading">Education</h2>
+                <div class="content">
+                    {% assign education = site.data.education | sort:"yearStart" | reverse %}
+                    {% if education and education.size > 0 %}
+                        {% for item in education %}
+                            <div class="item">
+                                <h3 class="title">
+                                    {% assign icon = icons | where:"id",item.faIcon | first %}
+                                    <i class="{{ icon.icon_class }}"></i> {{ item.degree }}
+                                </h3>
+                                <h4 class="university">
+                                    <a href="{{ item.link }}">{{ item.school }}</a> <span class="year">
+                                            {% if item.dates %}
+                                                {% if item.dates.start %}
+                                                    {% assign startDate = item.dates.start | date: profile.config.general.jobsDateFormat %}
+                                                    {% if item.dates.isPresent %}
+                                                        ({{ startDate }} - Present)
+                                                    {% elsif item.dates.end and item.dates.end != "" %}
+                                                        {% assign endDate = item.dates.end | date: profile.config.general.jobsDateFormat %}
+                                                        {% if startDate != endDate %}
+                                                            ({{ startDate }} - {{ endDate }})
+                                                        {% else %}
+                                                            ({{ startDate }})
+                                                        {% endif %}
+                                                    {% else %}
+                                                        ({{ startDate }})
+                                                    {% endif %}
+                                                {% elsif item.dates.end %}
+                                                    ({{ item.dates.end | date:profile.config.general.jobsDateFormat }})
+                                                {% endif %}
+                                            {% endif %}</span></h4>
+                            </div><!--//item-->
+                        {% endfor %}
+                    {% else %}
+                        No higher education.
+                    {% endif %}
+                </div><!--//content-->
+            </div><!--//section-inner-->
+        </aside><!--//section-->
+
+        <aside class="languages aside section">
+            <div class="section-inner">
+                <h2 class="heading">Languages</h2>
+                <div class="content">
+                    <ul class="list-unstyled">
+                        {% assign languages = site.data.languages | where:"active",true | sort:"value" | reverse %}
+                        {% if languages and languages.size > 0 %}
+                            {% assign ratingIcon = icons | where:"id","star" | first %}
+                            {% for item in languages %}
+                                <li class="item">
+                                    <span class="title">
+                                        <strong>{{ item.name }}:</strong>
+                                    </span>
+                                    <span class="level">{{ item.valueDescription }} <br class="visible-xs"/>
+                                        {% for i in (1..item.value) %}
+                                            <i class="{{ ratingIcon.icon_class }}"></i>
+                                        {% endfor %}
+                                    </span>
+                                </li><!--//item-->
+                            {% endfor %}
+                        {% else %}
+                            No languages.
+                        {% endif %}
+                    </ul>
+                </div><!--//content-->
+            </div><!--//section-inner-->
+        </aside><!--//section-->
+
+        {% if profile.config.resume.showGitHubGraph %}
+            <aside class="github aside section">
+                <div class="section-inner">
+                    <h2 class="heading">My GitHub</h2>
+                    <div id="github-graph" class="github-graph"></div>
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+        {% endif %}
+    </div><!--//secondary-->
+</div><!--//row-->

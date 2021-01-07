@@ -1,0 +1,29 @@
+<div class="container">
+    <a href="\">
+        <img class="profile-image img-responsive pull-left" src="{{ profile.imageLink }}" alt="{{ profile.name }}" />
+    </a>
+    <div class="profile-content pull-left">
+        <h1 class="name">{{ profile.name }}</h1>
+        <h2 class="desc">{{ profile.title }}</h2>
+        <ul class="social list-inline">
+            {% assign socialMedia = site.data.socialMedia | where:"active",true | sort:"displayOrder" %}
+            {% if socialMedia and socialMedia.size > 0 %}
+                {% for item in socialMedia limit:profile.config.header.maxSocialMedia %}
+                    {% if forloop.last %}
+                        <li class="{{ forloop.last }}">
+                    {% else %}
+                        <li>
+                    {% endif %}
+                        <a href="{{ item.link }}" title="{{ item.title }}">
+                            {% assign icon = icons | where:"id",item.faIcon | first %}
+                            <i class="{{ icon.icon_class }}"></i>
+                        </a>
+                    </li>
+                {% endfor %}
+            {% endif %}
+        </ul>
+    </div><!--//profile-->
+    <div class="site-nav pull-right">
+        {% include navigation.html %}
+    </div>
+</div><!--//container-->

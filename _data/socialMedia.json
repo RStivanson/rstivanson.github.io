@@ -1,0 +1,37 @@
+[
+    {
+        "link": "https://twitter.com/robstivanson",
+        "title": "Twitter",
+        "faIcon": "twitter",
+        "active": true,
+        "displayOrder": 5
+    },
+    {
+        "link": "https://www.facebook.com/robert.stivanson.3",
+        "title": "Facebook",
+        "faIcon": "facebook",
+        "active": true,
+        "displayOrder": 4
+    },
+    {
+        "link": "https://github.com/RobertStivanson",
+        "title": "GitHub",
+        "faIcon": "github",
+        "active": true,
+        "displayOrder": 1
+    },
+    {
+        "link": "http://www.linkedin.com/in/robertstivanson",
+        "title": "LinkedIn",
+        "faIcon": "linkedin",
+        "active": true,
+        "displayOrder": 2
+    },
+    {
+        "link": "https://robertstivanson.itch.io/",
+        "title": "Itch.io",
+        "faIcon": "itch-io",
+        "active": false,
+        "displayOrder": 3
+    }
+]

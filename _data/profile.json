@@ -1,0 +1,45 @@
+{
+    "name": "Robert Stivanson",
+    "title": "Software Engineer",
+    "imageLink": "assets/images/profile/profile-2018.png",
+    "location": {
+        "city": "White Oak",
+        "stateCode": "PA",
+        "state": "Pennsylvania",
+        "country": "United States of America",
+        "countryCode": "USA"
+    },
+    "email": "contact@robsti.dev",
+    "resumeLink": "assets/files/rstivanson-resume2020.pdf",
+    "aboutMe": [
+        "Welcome, my name is Robert Stivanson. I am a software developer from Northwestern Pennsylvania. I have a passion for developing awesome software including games, desktop applications, web applications.",
+        "I spend most of my free time coding my next project. However when I'm not doing that, I am expanding my general knowledge, learning new ways to code, or playing Dungeons and Dragons."
+    ],
+    "config": {
+        "general": {
+            "description": "Portfolio for Robert Stivanson, a software developer.",
+            "favicon": "favicon.ico",
+            "useSimpleDisclaimer": false,
+            "projectsDateFormat": "%b %Y",
+            "jobsDateFormat": "%Y"
+        },
+        "header": {
+            "maxSocialMedia": 6
+        },
+        "resume": {
+            "showAboutMe": false,
+            "maxJobs": 5,
+            "maxPriorityProjects": 4,
+            "showOtherProjects": false,
+            "maxOtherProjects": 2,
+            "showCity": false,
+            "showLongState": true,
+            "showCountryCode": true,
+            "maxSkills": 7,
+            "showGitHubGraph": true
+        },
+        "projects": {
+            "showProjectDates": false
+        }
+    }
+}

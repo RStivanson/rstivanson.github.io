@@ -1,0 +1,121 @@
+[
+    {
+        "positionTitle": "Software Developer",
+        "companyName": "DTPM Inc.",
+        "companyLink": "https://www.dtpm.com/",
+        "dates": {
+            "start": "2020-10-19",
+            "end": "",
+            "isPresent": true
+        },
+        "tasks": [
+        ],
+        "active": true
+    },
+    {
+        "positionTitle": "Systems Analyst",
+        "companyName": "B-Three Solutions",
+        "companyLink": "https://bthreesolutions.com/",
+        "dates": {
+            "start": "2018-12-01",
+            "end": "2020-10-16",
+            "isPresent": false
+        },
+        "tasks": [
+            "Developed a system for a distributed system to handle the merging of data on a central server while also maintaining database constraints.",
+            "Web application that utilized client developed data-analysis methodology for data processing and reporting.",
+            "Optimized front and back end systems for the displaying and searching of large datasets.",
+            "Developed a system for creating and maintaining regional and multi-lingual terms of sale.",
+            "Utilized knowledge of .NET (C# / VB), MySQL, Oracle, JavaScript, Angular, REST"
+        ],
+        "active": true
+    },
+    {
+        "positionTitle": "Software Engineer",
+        "companyName": "B-Three Solutions (contracted by Synergy Staffing)",
+        "companyLink": "https://bthreesolutions.com/",
+        "dates": {
+            "start": "2018-05-01",
+            "end": "2018-12-01",
+            "isPresent": false
+        },
+        "tasks": [
+            "Worked on localization and multi-currency features for an existing business platform.",
+            "Worked closely with clients to design and implement new features.",
+            "Provided customer facing support and maintenance.",
+            "Utilized knowledge of C#, JavaScript, Angular, and REST"
+        ],
+        "active": true
+    },
+    {
+        "positionTitle": "Junior Software Developer",
+        "companyName": "Chroma Technology Solutions",
+        "companyLink": "https://www.chroma-marketing.com/",
+        "dates": {
+            "start": "2017-09-01",
+            "end": "2018-05-01",
+            "isPresent": false
+        },
+        "tasks": [
+            "Developed lab simulation tools to improve development and automate testing.",
+            "Optimized laboratory information system’s databases and APIs to provide quicker responses while also being more maintainable.",
+            "Utilized third party RESTful APIs to integrate external functionality.",
+            "Developed a chrome extension to inject external behavior into the Podio web application.",
+            "Worked with a team in a fast paced environment to provide software solutions.",
+            "Developed applications using: C#, PHP, MySQL, JavaScript, and REST"
+        ],
+        "active": true
+    },
+    {
+        "positionTitle": "Security Officer",
+        "companyName": "U.S. Security Associates",
+        "companyLink": "https://www.ussecurityassociates.com/",
+        "dates": {
+            "start": "2016-07-01",
+            "end": "2017-09-01",
+            "isPresent": false
+        },
+        "tasks": [
+            "Observed premises to provide a safe working environment.",
+            "Performed routine patrols and inspections.",
+            "Monitored traffic in and out of the facility.",
+            "Communicated with other guards and provided thorough notes of daily activities."
+        ],
+        "active": true
+    },
+    {
+        "positionTitle": "Application Developer Intern",
+        "companyName": "Logistics Plus",
+        "companyLink": "https://www.logisticsplus.net/",
+        "dates": {
+            "start": "2015-12-01",
+            "end": "2016-02-01",
+            "isPresent": false
+        },
+        "tasks": [
+            "Worked with a team to complete project objectives.",
+            "Validated continuous program operation by thoroughly testing code using Test-driven development.",
+            "Worked in a Web Client-Server environment using: HTML, CSS, ASP.Net, JavaScript and C#",
+            "Developed database operations using MySQL commands.",
+            "Conformed to company standards to produce readable and consistent code."
+        ],
+        "active": true
+    },
+    {
+        "positionTitle": "Game Room Attendant",
+        "companyName": "Chuck E. Cheese's",
+        "companyLink": "https://www.chuckecheese.com/",
+        "dates": {
+            "start": "2013-03-01",
+            "end": "2014-04-01",
+            "isPresent": false
+        },
+        "tasks": [
+            "Provided a readily available customer service.",
+            "Performed quality assurance tests on all games while documenting any problems.",
+            "Completed small maintenance tasks on broken games.",
+            "Communicated with a team to provide an outstanding experience for all guests."
+        ],
+        "active": true
+    }
+]

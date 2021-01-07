@@ -1,0 +1,78 @@
+---
+permalink: /projects.html
+layout: default
+title: Robert Stivanson - Projects
+---
+
+{% assign profile = site.data.profile %}
+
+<div class="row">
+    <div class="primary col-md-12 col-sm-12 col-xs-12">
+            <section class="projects section">
+                <div class="section-inner">
+                    <h2 class="heading">Projects</h2>
+                    <div class="content" style="margin:auto;">
+                        {% assign projects = site.data.projects | where:"active",true | sort:"dates.start" | reverse %}
+                        {% if projects and projects.size > 0%}
+                            {% for item in projects %}
+                                <div class="project item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="{{ item.defaultLink }}">
+                                        {% if item.imageLink and item.imageLink != "" %}
+                                            <img class="img-responsive project-image" src="{{ item.imageLink }}" alt="{{ item.name }}" />
+                                        {% endif %}
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title">
+                                            <a href="{{ item.defaultLink }}">{{ item.name }}
+                                                {% if profile.config.projects.showProjectDates and item.dates %}
+                                                    {% if item.dates.start %}
+                                                        {% assign startDate = item.dates.start | date: profile.config.general.projectsDateFormat %}
+                                                        {% if item.dates.isPresent %}
+                                                            ({{ startDate }} - Present)
+                                                        {% elsif item.dates.end and item.dates.end != "" %}
+                                                            {% assign endDate = item.dates.end | date: profile.config.general.projectsDateFormat %}
+                                                            {% if item.dates.isPresent %}
+                                                                ({{ startDate }} - Present)
+                                                            {% elsif startDate != endDate %}
+                                                                ({{ startDate }} - {{ endDate }})
+                                                            {% else %}
+                                                                ({{ startDate }})
+                                                            {% endif %}
+                                                        {% else %}
+                                                            ({{ startDate }})
+                                                        {% endif %}
+                                                    {% elsif item.dates.end %}
+                                                        ({{ item.dates.end | date:profile.config.general.projectsDateFormat }})
+                                                    {% endif %}
+                                                {% endif %}</a>
+                                        </h3>
+                                        {% for descLine in item.description %}
+                                            <p class="summary">{{ descLine }}</p>
+                                        {% endfor %}
+                                        {% if item.viewMore and item.viewMore.size > 0 %}
+                                            <div class="view-more text-right">
+                                            {% for more in item.viewMore %}
+                                                <p>
+                                                    <a class="more-link" href="{{ more.link }}">
+                                                        {% assign icon = icons | where:"id",more.faIcon | first %}
+                                                        <i class="{{ icon.icon_class }}"></i> {{ more.text }}
+                                                    </a>
+                                                </p>
+                                            {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                            
+                                {% if forloop.last == false %}
+                                    <hr class="divider" />
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            <p>No projects.</p>
+                        {% endif %}
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+    </div><!--//primary-->
+</div><!--//row-->

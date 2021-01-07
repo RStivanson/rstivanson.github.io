@@ -1,0 +1,27 @@
+[
+    {
+        "text": "Home",
+        "links": [
+            "/",
+            "/index.html",
+            "/index"
+        ],
+        "active": true
+    },
+    {
+        "text": "Projects",
+        "links": [
+            "/projects.html",
+            "/projects"
+        ],
+        "active": true
+    },
+    {
+        "text": "Blog",
+        "links": [
+            "/blog.html",
+            "/blog"
+        ],
+        "active": false
+    }
+]

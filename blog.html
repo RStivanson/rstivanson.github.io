@@ -1,0 +1,52 @@
+---
+permalink: /blog.html
+layout: default
+title: Robert Stivanson - Blog
+---
+
+{% assign profile = site.data.profile %}
+
+<div class="row">
+    <div class="primary col-md-12 col-sm-12 col-xs-12">
+            <section class="projects section">
+                <div class="section-inner">
+                    <h2 class="heading">Blog</h2>
+                    <div class="content" style="margin:auto;">
+                        {% assign posts = site.posts %}
+                        {% if posts and posts.size > 0%}
+                            {% for item in posts %}
+                                <div class="project post item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="{{ item.url }}" target="_blank">
+                                        {% if item.imageLink and item.imageLink != "" %}
+                                            <img class="img-responsive project-image post-image" src="{{ item.imageLink }}" alt="{{ item.title }}" />
+                                        {% endif %}
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title">
+                                            <a href="{{ item.url }}">{{ item.title }}</a>
+                                        </h3>
+                                        {% for descLine in item.description %}
+                                            <p class="summary">{{ descLine }}</p>
+                                        {% endfor %}
+                                        <div class="view-more text-right">
+                                            <p>
+                                                <a class="more-link" href="{{ item.url }}">
+                                                    <i class="fa fa-eye"></i> Read more...
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                            
+                                {% if forloop.last == false %}
+                                    <hr class="divider" />
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            <p>No blog posts.</p>
+                        {% endif %}
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+    </div><!--//primary-->
+</div><!--//row-->

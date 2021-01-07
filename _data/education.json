@@ -1,0 +1,13 @@
+[
+    {
+        "faIcon": "graduation-cap",
+        "school": "Edinboro University of Pennsylvania",
+        "degree": "BSc Computer Science",
+        "link": "https://www.edinboro.edu/",
+        "dates": {
+            "start": "2012-08-01",
+            "end": "2016-12-01",
+            "isPresent": false
+        }
+    }
+]

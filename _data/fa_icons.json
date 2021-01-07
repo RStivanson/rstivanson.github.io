@@ -1,0 +1,54 @@
+[
+    {
+        "id": "external-link",
+        "icon_class": "fas fa-external-link-alt"
+    },
+    {
+        "id": "download",
+        "icon_class": "fas fa-download"
+    },
+    {
+        "id": "github",
+        "icon_class": "fab fa-github"
+    },
+    {
+        "id": "twitter",
+        "icon_class": "fab fa-twitter"
+    },
+    {
+        "id": "facebook",
+        "icon_class": "fab fa-facebook-f"
+    },
+    {
+        "id": "linkedin",
+        "icon_class": "fab fa-linkedin-in"
+    },
+    {
+        "id": "itch-io",
+        "icon_class": "fab fa-itch-io"
+    },
+    {
+        "id": "envelope",
+        "icon_class": "far fa-envelope"
+    },
+    {
+        "id": "map-marker",
+        "icon_class": "fas fa-map-marker-alt"
+    },
+    {
+        "id": "heart",
+        "icon_class": "fas fa-heart"
+    },
+    {
+        "id": "file",
+        "icon_class": "fas fa-file"
+    },
+    {
+        "id": "star",
+        "icon_class": "fas fa-star"
+    },
+    {
+        "id": "graduation-cap",
+        "icon_class": "fas fa-graduation-cap"
+    }
+]

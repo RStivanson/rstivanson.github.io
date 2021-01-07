@@ -1,0 +1,50 @@
+[
+    {
+        "name": "C++",
+        "value": 70,
+        "valueDescription": "Proficient",
+        "active": true
+    },
+    {
+        "name": "C#",
+        "value": 90,
+        "valueDescription": "Advanced",
+        "active": true
+    },
+    {
+        "name": "HTML/CSS",
+        "value": 79,
+        "valueDescription": "Proficient",
+        "active": true
+    },
+    {
+        "name": "JavaScript",
+        "value": 84,
+        "valueDescription": "Advanced",
+        "active": true
+    },
+    {
+        "name": "PHP",
+        "value": 77,
+        "valueDescription": "Proficient",
+        "active": true
+    },
+    {
+        "name": "MySQL",
+        "value": 75,
+        "valueDescription": "Advanced",
+        "active": true
+    },
+    {
+        "name": "Unity",
+        "value": 90,
+        "valueDescription": "Advanced",
+        "active": false
+    },
+    {
+        "name": "Laravel",
+        "value": 65,
+        "valueDescription": "Proficient",
+        "active": true
+    }
+]

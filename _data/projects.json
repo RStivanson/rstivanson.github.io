@@ -1,0 +1,198 @@
+[
+	{
+		"name": "Justice Framework",
+        "oneLiner": "A robust RPG framework extension for Unity.",
+		"description": [
+			"A role-playing game (RPG) framework built for use in the Unity game engine. Written in C#, this framework provides a quick plug-and-play functionality to speed up the process of developing RPGs."
+        ],
+		"imageLink": "assets/images/projects/justice-framework1.png",
+		"defaultLink": "https://github.com/RobertStivanson/justice-framework",
+		"ribbon": null,
+		"projectBacking": null,
+		"viewMore": [
+			{
+				"text": "View on GitHub",
+				"link": "https://github.com/RobertStivanson/justice-framework",
+				"faIcon": "external-link"
+			}
+		],
+		"dates": {
+            "start": "2015-03-01",
+            "end": "2018-06-01",
+            "isPresent": false
+		},
+		"isFeatured": false,
+		"isPriority": true,
+        "displayOrder": 0,
+		"active": true
+    },
+    {
+		"name": "Dash",
+        "oneLiner": "",
+		"description": [
+            "Dash is a very small implementation of Bash using Flex and Bison in C. This implementation has nowhere near the amount of features as the original Bash but it does have a few of the key features including directory manipulation, piping, process management, and more."
+        ],
+		"imageLink": "assets/images/projects/dash1.png",
+		"defaultLink": "https://github.com/RobertStivanson/dash",
+		"ribbon": null,
+		"projectBacking": null,
+		"viewMore": [
+			{
+				"text": "View on GitHub",
+				"link": "https://github.com/RobertStivanson/dash",
+				"faIcon": "external-link"
+			}
+		],
+		"dates": {
+            "start": "2016-03-01",
+            "end": "2016-04-01",
+            "isPresent": false
+		},
+		"isFeatured": false,
+		"isPriority": false,
+        "displayOrder": 4,
+		"active": true
+    },
+    {
+		"name": "Diamond-Square Terrain Generator",
+        "oneLiner": "",
+		"description": [
+            "A lightweight Diamond-Square component for Unity. Procedurally generates a heightmap for a terrain using the Diamond-Square algorithm. Last updated for Unity 5.4.2f2."
+        ],
+		"imageLink": "assets/images/projects/unity-diamond-square2.png",
+		"defaultLink": "https://github.com/RobertStivanson/unity-diamond-square",
+		"ribbon": null,
+		"projectBacking": null,
+		"viewMore": [
+			{
+				"text": "View on GitHub",
+				"link": "https://github.com/RobertStivanson/unity-diamond-square",
+				"faIcon": "external-link"
+			}
+		],
+		"dates": {
+            "start": "2015-09-01",
+            "end": "2015-10-01",
+            "isPresent": false
+		},
+		"isFeatured": false,
+		"isPriority": true,
+        "displayOrder": 1,
+		"active": true
+    },
+    {
+		"name": "Arena Fighters",
+        "oneLiner": "",
+		"description": [
+            "Arena Fighters is a 2D fighting game built in Visual Studios with VB.NET. The objective is to fight in an arena to earn gold and experience. Gold can be spent in the store to purchase potions and other items."
+        ],
+		"imageLink": "assets/images/projects/arena-fighters1.png",
+		"defaultLink": "",
+		"ribbon": null,
+		"projectBacking": null,
+		"viewMore": [
+			{
+				"text": "View on Itch.io",
+				"link": "https://robertstivanson.itch.io/arena-fighters",
+				"faIcon": "external-link"
+			}
+		],
+		"dates": {
+            "start": "2010-01-01",
+            "end": "2010-01-01",
+            "isPresent": false
+		},
+		"isFeatured": false,
+		"isPriority": false,
+        "displayOrder": 3,
+		"active": false
+    },
+    {
+		"name": "Hunt and Kill Maze Generator",
+        "oneLiner": "",
+		"description": [
+            "The Hunt and Kill Maze Generator is a C++ program that generates random mazes using the Hunt and Kill maze generation algorithm. This algorithm likes to produce long winding tunnels and forks. There are still plenty of stubs and dead ends as well. With such long tunnels it seems to be harder to find where the given tunnel ends. This algorithm behaves like a recursive backtracker due to the Hunt portion extending from already visited cells, however it is not a backtracker because it does not actually backtrack.",
+            "This program uses OpenGL and GLUT to draw the maze on the screen for the user to view. The generation of the maze is visualized but there are options to skip the visualization and only show the final product."
+        ],
+		"imageLink": "assets/images/projects/hunt-and-kill2.png",
+		"defaultLink": "https://github.com/RobertStivanson/hunt-and-kill-maze-generator",
+		"ribbon": null,
+		"projectBacking": null,
+		"viewMore": [
+			{
+				"text": "View on GitHub",
+				"link": "https://github.com/RobertStivanson/hunt-and-kill-maze-generator",
+				"faIcon": "external-link"
+			}
+		],
+		"dates": {
+            "start": "2015-10-01",
+            "end": "2015-11-01",
+            "isPresent": false
+		},
+		"isFeatured": false,
+		"isPriority": true,
+        "displayOrder": 3,
+		"active": true
+    },
+    {
+		"name": "Store Manager Game",
+        "oneLiner": "",
+		"description": [
+            "A small C++ stock management game. You are Bob, the manager of Bob's General Market. Your job is to manage the products in your store and earn as much money as you can. Earn ten million dollars to win."
+        ],
+		"imageLink": "assets/images/projects/store-manager-game2.png",
+		"defaultLink": "https://github.com/RobertStivanson/store-manager-game",
+		"ribbon": null,
+		"projectBacking": null,
+		"viewMore": [
+			{
+				"text": "View on GitHub",
+				"link": "https://github.com/RobertStivanson/store-manager-game",
+				"faIcon": "external-link"
+			}
+		],
+		"dates": {
+            "start": "2009-10-01",
+            "end": "2009-10-01",
+            "isPresent": false
+		},
+		"isFeatured": false,
+		"isPriority": false,
+        "displayOrder": 2,
+		"active": true
+    },
+    {
+		"name": "Cloudy With A Chance of Meteors",
+        "oneLiner": "Submission for the 2019 Epic MegaJam, \"Down To Earth.\"",
+		"description": [
+			"Submission for the 2019 Epic MegaJam, \"Down To Earth.\"",
+            "It looks like there's going to be a meteor shower! Jump into Cloudy With A Chance of Meteors and hurtle through space on your way to crash into the Earth! Avoid Human ships while gathering space rocks to make yourself HUGE! Watch out for your heat though, as it will it break you apart, piece by piece. Find your target on earth and smash into it! Collect points to purchase new skins and perks! All, in this exciting new game developed by Team Cloudy for the 2019 Epic MegaJam."
+        ],
+		"imageLink": "assets/images/projects/cloudy-with-meteors3.png",
+		"defaultLink": "https://itch.io/jam/2019-epic-megajam/rate/521499",
+		"ribbon": null,
+		"projectBacking": null,
+		"viewMore": [
+			{
+				"text": "View on GitHub",
+				"link": "https://github.com/RobertStivanson/cloudy-with-a-chance-of-meteors",
+				"faIcon": "external-link"
+			},
+			{
+				"text": "View submission on Itch.io",
+				"link": "https://itch.io/jam/2019-epic-megajam/rate/521499",
+				"faIcon": "external-link"
+			}
+		],
+		"dates": {
+            "start": "2019-11-14",
+            "end": "2019-11-21",
+            "isPresent": false
+		},
+		"isFeatured": true,
+		"isPriority": false,
+        "displayOrder": 2,
+		"active": true
+    }
+]

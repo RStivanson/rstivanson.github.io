@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Inside Job",
+        "description": "Published in Chimera, volume 13 pages 78-80. Timothy Gates is a professional security tester. Hired by the Glass National Bank headquarters, Tim sets out to break the security of a local branch.",
+        "link": "assets/files/Inside Job.pdf",
+        "faIcon": "download",
+        "publicationDate": "2015-01-01",
+        "active": true
+    }
+]
