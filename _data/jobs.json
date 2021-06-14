@@ -11,7 +11,7 @@
         "tasks": [
             "Implemented an environment cloning application as a standalone API service, with a separate web front-end application.",
             "Architected and developed a middleware system to allow communication between our applications and an HL7 system.",
-            "Developed a desktop application to migrate data from standalone data files to a web based application.",
+            "Developed a desktop application to migrate data from standalone data files to a web-based application.",
             "Developed a REST API wrapper for our main application for usage by third-party integrations.",
             "Utilized knowledge of .NET Framework, .NET Core, MySQL, JavaScript, React, REST"
         ],
