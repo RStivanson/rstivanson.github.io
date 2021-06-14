@@ -35,8 +35,8 @@
             "showCity": false,
             "showLongState": true,
             "showCountryCode": true,
-            "maxSkills": 7,
-            "showGitHubGraph": true
+            "maxSkills": 8,
+            "showGitHubGraph": false
         },
         "projects": {
             "showProjectDates": false

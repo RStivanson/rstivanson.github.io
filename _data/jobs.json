@@ -1,7 +1,7 @@
 [
     {
         "positionTitle": "Software Developer",
-        "companyName": "DTPM Inc.",
+        "companyName": "DTPM, Inc.",
         "companyLink": "https://www.dtpm.com/",
         "dates": {
             "start": "2020-10-19",
@@ -9,12 +9,17 @@
             "isPresent": true
         },
         "tasks": [
+            "Implemented an environment cloning application as a standalone API service, with a separate web front-end application.",
+            "Architected and developed a middleware system to allow communication between our applications and an HL7 system.",
+            "Developed a desktop application to migrate data from standalone data files to a web based application.",
+            "Developed a REST API wrapper for our main application for usage by third-party integrations.",
+            "Utilized knowledge of .NET Framework, .NET Core, MySQL, JavaScript, React, REST"
         ],
         "active": true
     },
     {
         "positionTitle": "Systems Analyst",
-        "companyName": "B-Three Solutions",
+        "companyName": "B-Three Solutions, Inc.",
         "companyLink": "https://bthreesolutions.com/",
         "dates": {
             "start": "2018-12-01",
@@ -26,13 +31,13 @@
             "Web application that utilized client developed data-analysis methodology for data processing and reporting.",
             "Optimized front and back end systems for the displaying and searching of large datasets.",
             "Developed a system for creating and maintaining regional and multi-lingual terms of sale.",
-            "Utilized knowledge of .NET (C# / VB), MySQL, Oracle, JavaScript, Angular, REST"
+            "Utilized knowledge of .NET (C# / VB), Microsoft SQL Server, Oracle, JavaScript, Angular, REST"
         ],
         "active": true
     },
     {
         "positionTitle": "Software Engineer",
-        "companyName": "B-Three Solutions (contracted by Synergy Staffing)",
+        "companyName": "B-Three Solutions, Inc. (contracted by Synergy Staffing)",
         "companyLink": "https://bthreesolutions.com/",
         "dates": {
             "start": "2018-05-01",

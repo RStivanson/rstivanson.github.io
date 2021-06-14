@@ -5,5 +5,12 @@
         "value": 5,
         "valueDescription": "Native Speaker",
         "active": true
+    },
+    {
+        "name": "Japanese",
+        "code": "ja",
+        "value": 2,
+        "valueDescription": "Currently Learning",
+        "active": true
     }
 ]
