@@ -4,34 +4,41 @@
         "title": "Twitter",
         "faIcon": "twitter",
         "active": true,
-        "displayOrder": 5
+        "displayOrder": 16
     },
     {
         "link": "https://www.facebook.com/robert.stivanson.3",
         "title": "Facebook",
         "faIcon": "facebook",
         "active": true,
-        "displayOrder": 4
+        "displayOrder": 14
     },
     {
         "link": "https://github.com/RobertStivanson",
         "title": "GitHub",
         "faIcon": "github",
         "active": true,
-        "displayOrder": 1
+        "displayOrder": 12
     },
     {
         "link": "http://www.linkedin.com/in/robertstivanson",
         "title": "LinkedIn",
         "faIcon": "linkedin",
         "active": true,
-        "displayOrder": 2
+        "displayOrder": 10
     },
     {
         "link": "https://robertstivanson.itch.io/",
         "title": "Itch.io",
         "faIcon": "itch-io",
         "active": false,
-        "displayOrder": 3
+        "displayOrder": 18
+    },
+    {
+        "link": "https://bitbucket.org/robstivanson/",
+        "title": "Bitbucket",
+        "faIcon": "bitbucket",
+        "active": false,
+        "displayOrder": 12
     }
 ]

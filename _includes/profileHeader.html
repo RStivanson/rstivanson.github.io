@@ -1,7 +1,9 @@
 <div class="container">
-    <a href="\">
-        <img class="profile-image img-responsive pull-left" src="{{ profile.imageLink }}" alt="{{ profile.name }}" />
-    </a>
+    <div class="pull-left profile-image">
+        <a href="\">
+            <img class="img-responsive" src="{{ profile.imageLink }}" alt="{{ profile.name }}" />
+        </a>
+    </div>
     <div class="profile-content pull-left">
         <h1 class="name">{{ profile.name }}</h1>
         <h2 class="desc">{{ profile.title }}</h2>

@@ -12,6 +12,10 @@
         "icon_class": "fab fa-github"
     },
     {
+        "id": "bitbucket",
+        "icon_class": "fab fa-bitbucket"
+    },
+    {
         "id": "twitter",
         "icon_class": "fab fa-twitter"
     },
