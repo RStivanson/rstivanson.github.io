@@ -76,7 +76,7 @@
             "isPresent": false
 		},
 		"isFeatured": false,
-		"isPriority": true,
+		"isPriority": false,
         "displayOrder": 1,
 		"active": true
     },
@@ -191,16 +191,14 @@
             "isPresent": false
 		},
 		"isFeatured": false,
-		"isPriority": false,
+		"isPriority": true,
         "displayOrder": 2,
 		"active": true
     },
     {
 		"name": "Hex Dots",
         "oneLiner": "A game based on Dots but with a hexagonal twist",
-		"description": [
-			"A game based on Dots but with a hexagonal twist"
-        ],
+		"description": [],
 		"imageLink": "https://raw.githubusercontent.com/RobertStivanson/hex-dots/main/gameplay.gif?token=AF52JPN6KQO35XDASITKG3LBVY6PU",
 		"defaultLink": "https://github.com/RobertStivanson/hex-dots",
 		"ribbon": null,
