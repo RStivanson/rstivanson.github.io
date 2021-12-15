@@ -190,6 +190,33 @@
             "end": "2019-11-21",
             "isPresent": false
 		},
+		"isFeatured": false,
+		"isPriority": false,
+        "displayOrder": 2,
+		"active": true
+    },
+    {
+		"name": "Hex Dots",
+        "oneLiner": "A game based on Dots but with a hexagonal twist",
+		"description": [
+			"A game based on Dots but with a hexagonal twist"
+        ],
+		"imageLink": "https://raw.githubusercontent.com/RobertStivanson/hex-dots/main/gameplay.gif?token=AF52JPN6KQO35XDASITKG3LBVY6PU",
+		"defaultLink": "https://github.com/RobertStivanson/hex-dots",
+		"ribbon": null,
+		"projectBacking": null,
+		"viewMore": [
+			{
+				"text": "View on GitHub",
+				"link": "https://github.com/RobertStivanson/hex-dots",
+				"faIcon": "external-link"
+			}
+		],
+		"dates": {
+            "start": "2021-12-01",
+            "end": "2021-12-06",
+            "isPresent": false
+		},
 		"isFeatured": true,
 		"isPriority": false,
         "displayOrder": 2,
