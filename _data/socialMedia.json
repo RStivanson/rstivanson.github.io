@@ -1,20 +1,20 @@
 [
     {
-        "link": "https://twitter.com/magnitelive",
+        "link": "https://twitter.com/magnitedev",
         "title": "Twitter",
         "faIcon": "twitter",
-        "active": true,
+        "active": false,
         "displayOrder": 16
     },
     {
         "link": "https://www.facebook.com/robert.stivanson.3",
         "title": "Facebook",
         "faIcon": "facebook",
-        "active": true,
+        "active": false,
         "displayOrder": 14
     },
     {
-        "link": "https://github.com/RobertStivanson",
+        "link": "https://github.com/RStivanson",
         "title": "GitHub",
         "faIcon": "github",
         "active": true,
