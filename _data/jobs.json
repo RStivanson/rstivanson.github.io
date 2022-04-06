@@ -4,8 +4,10 @@
         "companyName": "DTPM, Inc.",
         "companyLink": "https://www.dtpm.com/",
         "dates": {
-            "start": "2020-10-16",
-            "end": "",
+            "start": "2020-10-14",
+            "end": "2022-04-08",
+			"firstDay": "2020-10-19",
+			"lastDay": "2020-04-08",
             "isPresent": true
         },
         "tasks": [
@@ -22,8 +24,10 @@
         "companyName": "B-Three Solutions, Inc.",
         "companyLink": "https://bthreesolutions.com/",
         "dates": {
-            "start": "2018-12-01",
-            "end": "2020-10-16",
+            "start": "2018-05-21",
+            "end": "2020-11-06",
+			"firstDay": "2018-12-01",
+			"lastDay": "2020-10-16",
             "isPresent": false
         },
         "tasks": [
@@ -36,12 +40,14 @@
         "active": true
     },
     {
-        "positionTitle": "Software Engineer",
+        "positionTitle": "Software Developer",
         "companyName": "B-Three Solutions, Inc. (contracted by Synergy Staffing)",
         "companyLink": "https://bthreesolutions.com/",
         "dates": {
-            "start": "2018-05-01",
-            "end": "2018-12-01",
+            "start": "2018-05-21",
+            "end": "2018-11-30",
+			"firstDay": "2018-05-21",
+			"lastDay": "2020-11-30",
             "isPresent": false
         },
         "tasks": [
@@ -59,6 +65,8 @@
         "dates": {
             "start": "2017-09-01",
             "end": "2018-05-01",
+			"firstDay": "2017-09-04",
+			"lastDay": "2018-05-01",
             "isPresent": false
         },
         "tasks": [
@@ -78,6 +86,8 @@
         "dates": {
             "start": "2016-07-01",
             "end": "2017-09-01",
+            "firstDay": "2016-07-01",
+            "lastDay": "2017-09-01",
             "isPresent": false
         },
         "tasks": [
@@ -95,6 +105,8 @@
         "dates": {
             "start": "2015-12-01",
             "end": "2016-02-01",
+            "firstDay": "2015-12-01",
+            "lastDay": "2016-02-01",
             "isPresent": false
         },
         "tasks": [
@@ -113,6 +125,8 @@
         "dates": {
             "start": "2013-03-01",
             "end": "2014-04-01",
+            "firstDay": "2013-03-01",
+            "lastDay": "2014-04-01",
             "isPresent": false
         },
         "tasks": [
