@@ -1,4 +1,20 @@
 [
+	{
+        "positionTitle": "Software Engineer",
+		"subTitle": "Tools Engineer (Server)",
+        "companyName": "Blizzard Entertainment, Inc.",
+        "companyLink": "https://www.blizzard.com/",
+        "dates": {
+            "start": "2020-04-04",
+            "end": "",
+			"firstDay": "2020-04-11",
+			"lastDay": "",
+            "isPresent": true
+        },
+        "tasks": [
+        ],
+        "active": true
+    },
     {
         "positionTitle": "Software Developer",
         "companyName": "DTPM, Inc.",
@@ -8,7 +24,7 @@
             "end": "2022-04-08",
 			"firstDay": "2020-10-19",
 			"lastDay": "2020-04-08",
-            "isPresent": true
+            "isPresent": false
         },
         "tasks": [
             "Implemented an environment cloning application as a standalone API service, with a separate web front-end application.",
