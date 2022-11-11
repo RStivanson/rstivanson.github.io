@@ -5,9 +5,9 @@
         "companyName": "Blizzard Entertainment, Inc.",
         "companyLink": "https://www.blizzard.com/",
         "dates": {
-            "start": "2020-04-04",
+            "start": "2022-04-04",
             "end": "",
-			"firstDay": "2020-04-11",
+			"firstDay": "2022-04-11",
 			"lastDay": "",
             "isPresent": true
         },
@@ -23,7 +23,7 @@
             "start": "2020-10-14",
             "end": "2022-04-08",
 			"firstDay": "2020-10-19",
-			"lastDay": "2020-04-08",
+			"lastDay": "2022-04-08",
             "isPresent": false
         },
         "tasks": [
