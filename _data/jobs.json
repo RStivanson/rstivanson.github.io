@@ -1,15 +1,31 @@
 [
 	{
+        "positionTitle": "Senior Software Engineer I",
+		"subTitle": "Senior Software Engineer I - Tools",
+        "companyName": "Blizzard Entertainment, Inc.",
+        "companyLink": "https://www.blizzard.com/",
+        "dates": {
+            "start": "2023-03-05",
+            "end": "",
+			"firstDay": "2023-03-06",
+			"lastDay": "",
+            "isPresent": true
+        },
+        "tasks": [
+        ],
+        "active": true
+    },
+	{
         "positionTitle": "Software Engineer",
 		"subTitle": "Software Engineer - Tools",
         "companyName": "Blizzard Entertainment, Inc.",
         "companyLink": "https://www.blizzard.com/",
         "dates": {
             "start": "2022-04-04",
-            "end": "",
+            "end": "2023-03-04",
 			"firstDay": "2022-04-11",
-			"lastDay": "",
-            "isPresent": true
+			"lastDay": "2023-03-04",
+            "isPresent": false
         },
         "tasks": [
         ],
