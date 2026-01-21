@@ -199,7 +199,7 @@
 		"name": "Hex Dots",
         "oneLiner": "A game based on Dots but with a hexagonal twist",
 		"description": [],
-		"imageLink": "https://raw.githubusercontent.com/RobertStivanson/hex-dots/main/gameplay.gif?token=AF52JPN6KQO35XDASITKG3LBVY6PU",
+		"imageLink": "https://raw.githubusercontent.com/RobertStivanson/hex-dots/main/gameplay.gif",
 		"defaultLink": "https://github.com/RobertStivanson/hex-dots",
 		"ribbon": null,
 		"projectBacking": null,
